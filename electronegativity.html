@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronegativity Website</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&display=swap">
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="electronegativity.html" class="home">Home</a>
+        <a href="checker.html">Electronegativity Checker</a>
+        <a href="molecular_geometry.html">Molecular Geometry</a>
+    </nav>
+
+    <!-- Home Page Content -->
+    <div class="home-container" id="home">
+        <h1>Welcome to the Electronegativity Website</h1>
+        <p>This website helps you check the bond type between two elements based on their electronegativity.<br>
+        Explore the electronegativity values of elements in the periodic table and determine whether a bond is polar, 
+        non-polar, or ionic.</p>
+    </div>
+    <center><div class="imagecontainer">
+    <img src="375205315_1090280312135119_6242308108147859353_n.png" alt="electronegativity table" id="myimage"></div>
+    <div id="lagayan" class="lagayan">
+        <span class="close" id="closelagayan">&times;</span>
+        <img src="375205315_1090280312135119_6242308108147859353_n.png" id="lagayanimage" class="lagayanimage">
+        <div id="caption">Electronegativity</div>
+    </div></center>
+    
+    <div class="text-container" id="home">
+
+        <h3 class="ediwow"> Our website makes it easy to determine the type of chemical bond between two elements based on
+            their electronegativity values. By simply exploring the periodic table, you can enter the elements you're
+            curious about and instantly find out if the bond they form is polar, non-polar, or ionic. 
+        </h3>
+    <h3>
+        Our tool calculates the electronegativity difference between two elements and provides an accurate bond type classification.
+        Whether you're a student, educator, or chemistry enthusiast, our Bond Type Checker is a great way to learn more about the fundamental principles of chemical bonding.<br> <br>
+        Explore, learn, and deepen your understanding of chemistry!
+        </h3> <br>
+    </div>
+</body>
+<script>
+    var img = document.getElementById("myimage");
+    var lagayanimg = document.getElementById("lagayan");
+    var lagayanimages = document.getElementById("lagayanimage");
+    var captionText = document.getElementById("caption");
+    var closeBtn= document.getElementById("closelagayan");
+
+    img.onclick = function(){
+        lagayanimg.style.display="block";
+        lagayanimages.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+    closeBtn.onclick = function() {
+        lagayanimg.style.display = "none";
+    }
+
+</script>
+<footer>
+    <p>Group  5 - Physical Science</p>
+    <p>Lagro High School</p>
+</footer>
+</html>

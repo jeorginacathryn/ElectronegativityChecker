@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Molecular Geometry</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&display=swap">
+    <style>
+        html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quantico', sans-serif;
+    background-color: #bebeff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow-x: hidden;
+}
+nav {
+    background-color: #333;
+    padding: 15px;
+    text-align: center;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: auto;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out; 
+}
+nav a:hover {
+    color: #ffcc00;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+
+   }
+  
+   footer p {
+   margin: 5px 0;
+   font-family: 'Quantico', sans-serif;
+   color: white;
+   }
+   .container {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 1000px;
+            width: 100%;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            min-width: 300px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .geo{
+    color: #ffcc00;
+            
+        }
+        td{
+            font-size:25px;
+        }
+        /* Responsive adjustments for very small screens */
+@media screen and (max-width: 375px) {
+    nav a {
+        font-size: 10px;
+        margin: 0 5px;
+    }
+
+    .container {
+        width: 98%;
+        padding: 10px;
+    }
+
+    th, td {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    td {
+        font-size: 14px;
+    }
+}
+
+/* Responsive adjustments for tablets and larger phones */
+@media screen and (min-width: 376px) and (max-width: 768px) {
+    nav a {
+        font-size: 10px;
+    }
+
+    .container {
+        width: 96%;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}
+
+/* Horizontal scrolling for tables on small screens */
+@media screen and (max-width: 600px) {
+    .container {
+        overflow-x: auto;
+    }
+}
+
+/* Ensure full responsiveness */
+* {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="electronegativity.html">Home</a>
+        <a href="checker.html">Electronegativity Checker</a>
+        <a href="molecular_geometry.html" class="geo">Molecular Geometry</a>
+        
+    </nav>
+    <br><center><div class="container">
+        <h1>Molecular Geometry Table</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Geometry</th>
+                    <th>Electron Groups</th>
+                    <th>Bonded Atoms</th>
+                    <th>Lone Pairs</th>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Linear<br>
+                        <img src="linear.png">
+                    </td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>CO<sup>2</sup></td>
+                </tr>
+                <tr>
+                    <td>Trigonal Planar<br>
+                    <img src="trigonal planar.png">
+                </td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>BF<sup>3</sup></td>
+                </tr>
+                <tr>
+                    <td>Bent<br>
+                    <img src="bent.png">
+                </td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>SO<sup>2</sup></td>
+                </tr>
+                <tr>
+                    <td>Tetrahedral<br>
+                    <img src="tetrahedral.png">
+                </td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>CH<sup>4</sup></td>
+                </tr>
+                <tr>
+                    <td>Trigonal Pyramidal<br>
+                    <img src="pyramidal.png" width="50%">
+                </td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>NH<sup>3</sup></td>
+                </tr>
+                <tr>
+                    <td>Trigonal Bipyramidal<br>
+                    <img src="trigonal bypyramidal.png">
+                </td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>0</td>
+                    <td>PCl<sup>5</sup></td>
+                </tr>
+                <tr>
+                    <td>Seesaw<br>
+                    <img src="sea-saw.png" width="70%">
+                </td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>SF<sup>4</sup></td>
+                </tr>
+                <tr>
+                    <td>T-Shaped<br>
+                    <img src="t-shaped.png" width="60%">
+                </td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>ClF<sup>3</sup></td>
+                </tr>
+                <tr>
+                    <td>Octahedral<br>
+                    <img src="octahedral.png">
+                </td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>0</td>
+                    <td>SF<sup>6</sup></td>
+                </tr>
+                <tr>
+                    <td>Square Pyramidal<br>
+                    <img src="square pyramidal.png">
+                </td>
+                    <td>6</td>
+                    <td>5</td>
+                    <td>1</td>
+                    <td>BrF<sup>5</sup></td>
+                </tr>
+                <tr>
+                    <td>Square Planar<br>
+                    <img src="square planar.png" width="60%"></td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>XeF<sup>4</sup></td>
+                </tr>
+            </tbody>
+        </table>
+    </div></center><br><br>
+</body>
+<footer>
+    <p>Group  5 - Physical Science</p>
+    <p>Lagro High School</p>
+</footer>
+</html>
