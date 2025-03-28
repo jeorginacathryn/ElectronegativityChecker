@@ -1,0 +1,971 @@
+HOME PAGE
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronegativity Website</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&display=swap">
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="electronegativity.html" class="home">Home</a>
+        <a href="checker.html">Electronegativity Checker</a>
+        <a href="molecular_geometry.html">Molecular Geometry</a>
+    </nav>
+
+    <!-- Home Page Content -->
+    <div class="home-container" id="home">
+        <h1>Welcome to the Electronegativity Website</h1>
+        <p>This website helps you check the bond type between two elements based on their electronegativity.<br>
+        Explore the electronegativity values of elements in the periodic table and determine whether a bond is polar, 
+        non-polar, or ionic.</p>
+    </div>
+    <center><div class="imagecontainer">
+    <img src="375205315_1090280312135119_6242308108147859353_n.png" alt="electronegativity table" id="myimage"></div>
+    <div id="lagayan" class="lagayan">
+        <span class="close" id="closelagayan">&times;</span>
+        <img src="375205315_1090280312135119_6242308108147859353_n.png" id="lagayanimage" class="lagayanimage">
+        <div id="caption">Electronegativity</div>
+    </div></center>
+    
+    <div class="text-container" id="home">
+
+        <h3 class="ediwow"> Our website makes it easy to determine the type of chemical bond between two elements based on
+            their electronegativity values. By simply exploring the periodic table, you can enter the elements you're
+            curious about and instantly find out if the bond they form is polar, non-polar, or ionic. 
+        </h3>
+    <h3>
+        Our tool calculates the electronegativity difference between two elements and provides an accurate bond type classification.
+        Whether you're a student, educator, or chemistry enthusiast, our Bond Type Checker is a great way to learn more about the fundamental principles of chemical bonding.<br> <br>
+        Explore, learn, and deepen your understanding of chemistry!
+        </h3> <br>
+    </div>
+</body>
+<script>
+    var img = document.getElementById("myimage");
+    var lagayanimg = document.getElementById("lagayan");
+    var lagayanimages = document.getElementById("lagayanimage");
+    var captionText = document.getElementById("caption");
+    var closeBtn= document.getElementById("closelagayan");
+
+    img.onclick = function(){
+        lagayanimg.style.display="block";
+        lagayanimages.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+    closeBtn.onclick = function() {
+        lagayanimg.style.display = "none";
+    }
+
+</script>
+<footer>
+    <p>Group  5 - Physical Science</p>
+    <p>Lagro High School</p>
+</footer>
+</html>
+
+HOME CSS
+body {
+    font-family: 'Quantico', sans-serif;
+    background-color: #bebeff;
+    height: 100p;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background-color: #333;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out; 
+}
+nav a:hover {
+    color: #ffcc00;
+    transform: scale(1.05);
+}
+h1 {
+    color: #333;
+}
+.container {
+    margin: 20px auto;
+    max-width: 600px;
+    background-color: white;
+    padding: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    transform: transform 0.3 ease-in-out;       
+
+}
+.home-container {
+    margin: 40px auto;
+    text-align: center;
+}
+select, button {
+    width: calc(50% - 10px);
+    padding: 10px;
+    margin: 10px 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+
+}
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+p {
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+}     
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+ }
+
+ footer p {
+ margin: 5px 0;
+ font-family: 'Quantico', sans-serif;
+ color: white;
+ } 
+ .imagecontainer{
+    display: block;
+    text-align: center;
+    padding:20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; 
+ }
+ .imagecontainer img{
+    width: 70%;
+    height: 60%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
+    transition: transform 0.3s ease;
+      align-items: auto;
+      cursor: pointer;
+ }
+ .imagecontainer img:hover{
+    transform: scale(1.01);
+ }
+
+ .text-container {
+    background-color:#CBC3E3;
+    margin: 40px auto;
+    max-width: 980px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.text-container h3 {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.text-container h3.ediwow {
+    font-weight: bold;
+}
+
+.text-container h3:last-child {
+    color: #555;
+    font-weight: 400;
+}
+.home{
+    color: #ffcc00;
+
+}
+.lagayan{
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    padding-top: 60px;
+}
+.lagayanimage{
+    margin: auto;
+    display: block;
+    width: 80%;
+    height: auto;
+    max-width: 100%;
+}
+.close{
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+    color: #ffcc00;
+    text-decoration: none;
+    cursor: pointer;
+}
+#caption{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+/* Responsive adjustments for very small screens */
+@media screen and (max-width: 375px) {
+    nav a {
+        font-size: 10px;
+        margin: 0 5px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .container, .home-container, .imagecontainer, .text-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    p, .text-container h3 {
+        font-size: 16px;
+    }
+
+    .close {
+        font-size: 30px;
+    }
+}
+
+/* Responsive adjustments for tablets and larger phones */
+@media screen and (min-width: 376px) and (max-width: 768px) {
+    nav a {
+        font-size: 10px;
+    }
+
+    .container, .home-container, .imagecontainer, .text-container {
+        width: 92%;
+    }
+}
+
+CHECKER HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronegativity Checker</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&display=swap">
+    <link rel="stylesheet" href="checker.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="electronegativity.html">Home</a>
+        <a href="checker.html" class="checker">Electronegativity Checker</a>
+        <a href="molecular_geometry.html">Molecular Geometry</a>
+    </nav>
+
+    <h1>Electronegativity Checker</h1>
+    <div class="container">
+        <p>Select two elements from the periodic table:</p>
+        <div class="dropdown">
+        <select id="element1">
+            <option value="">Select Element 1</option>
+        </select>
+        <select id="element2">
+            <option value="">Select Element 2</option>
+        </select>
+        </div>
+        <br>
+        <button onclick="checkBondType()">Check Bond Type</button>
+        <p id="result"></p>
+    </div><br>
+
+    <center><div class="text-container">
+        
+        <h3>How to check bond types:</h3><br>
+        <h3>If bond type > 1.7 it is an Ionic Bond</h3>
+        <h3>If bond type >= 0.4 it is a Polar Covalent Bond</h3>        
+        <h3>If bond type < 0.4 it is a Non Polar Covalent Bond</h3>
+
+        <input type="submit" value="Know More..." onclick="know()">
+
+    </div></center><br>
+
+    <center><div class="bond-section" id="bondSection" style="display: none;">
+        <h2>How to Determine Bond Type</h2>
+        <p><strong>Ionic Bonds</strong> occur when electrons are moved from one atom to another between metals and 
+            nonmetals, usually between elements with significantly different electronegativity.</p>
+        <p><strong>Covalent Bonds</strong> form between nonmetals, in which atoms share electrons.
+            When the atoms electronegativity differs by a moderate amount, polar covalent bonds form, but 
+            similar electronegativity between atoms results in non-polar covalent bonding.</p>
+        <p><strong>Electronegativity Difference:</strong></p>
+        <ul>
+            <li>Ionic Bond: Electronegativity difference &gt; 1.7</li>
+            <li>Polar Covalent Bond: Electronegativity difference between 0.4 and 1.7</li>
+            <li>Non-Polar Covalent Bond: Electronegativity difference &lt; 0.4</li>
+        </ul>
+        <p>By examining the elements involved in a molecule and their electronegativity values, you can predict 
+            whether the bond will be ionic or covalent and if it will be polar or non-polar.</p>
+
+        <input type="submit" value="Close" onclick="closeButton()">
+    </div></center><br>
+</body>
+<footer>
+    <p>Group  5 - Physical Science</p>
+    <p>Lagro High School</p>
+</footer>
+</html>
+<script>
+    const elements = [
+    { name: 'Hydrogen 2.20', en: 2.20 },
+    { name: 'Helium 0.0', en: 0.0 },
+    { name: 'Lithium 0.98', en: 0.98 },
+    { name: 'Beryllium 1.57', en: 1.57 },
+    { name: 'Boron 2.04', en: 2.04 },
+    { name: 'Carbon 2.55', en: 2.55 },
+    { name: 'Nitrogen 3.04', en: 3.04 },
+    { name: 'Oxygen 3.44', en: 3.44 },
+    { name: 'Fluorine 3.98', en: 3.98 },
+    { name: 'Neon 0.0', en: 0.0 },
+    { name: 'Sodium 0.93', en: 0.93 },
+    { name: 'Magnesium 1.31', en: 1.31 },
+    { name: 'Aluminium 1.61', en: 1.61 },
+    { name: 'Silicon 1.90', en: 1.90 },
+    { name: 'Phosphorus 2.19', en: 2.19 },
+    { name: 'Sulfur 2.58', en: 2.58 },
+    { name: 'Chlorine 3.16', en: 3.16 },
+    { name: 'Argon 0.0', en: 0.0 },
+    { name: 'Potassium 0.82', en: 0.82 },
+    { name: 'Calcium 1.00', en: 1.00 },
+    { name: 'Scandium 1.36', en: 1.36 },
+    { name: 'Titanium 1.54', en: 1.54 },
+    { name: 'Vanadium 1.63', en: 1.63 },
+    { name: 'Chromium 1.66', en: 1.66 },
+    { name: 'Manganese 1.55', en: 1.55 },
+    { name: 'Iron 1.83', en: 1.83 },
+    { name: 'Cobalt 1.88', en: 1.88 },
+    { name: 'Nickel 1.91', en: 1.91 },
+    { name: 'Copper 1.90', en: 1.90 },
+    { name: 'Zinc 1.65', en: 1.65 },
+    { name: 'Gallium 1.81', en: 1.81 },
+    { name: 'Germanium 2.01', en: 2.01 },
+    { name: 'Arsenic 2.18', en: 2.18 },
+    { name: 'Selenium 2.55', en: 2.55 },
+    { name: 'Bromine 2.96', en: 2.96 },
+    { name: 'Krypton 3.00', en: 3.00 },
+    { name: 'Rubidium 0.82', en: 0.82 },
+    { name: 'Strontium 0.95', en: 0.95 },
+    { name: 'Yttrium 1.22', en: 1.22 },
+    { name: 'Zirconium 1.33', en: 1.33 },
+    { name: 'Niobium 1.6', en: 1.6 },
+    { name: 'Molybdenum 2.16', en: 2.16 },
+    { name: 'Technetium 1.9', en: 1.9 },
+    { name: 'Ruthenium 2.2', en: 2.2 },
+    { name: 'Rhodium 2.28', en: 2.28 },
+    { name: 'Palladium 2.20', en: 2.20 },
+    { name: 'Silver 1.93', en: 1.93 },
+    { name: 'Cadmium 1.69', en: 1.69 },
+    { name: 'Indium 1.78', en: 1.78 },
+    { name: 'Tin 1.96', en: 1.96 },
+    { name: 'Antimony 2.05', en: 2.05 },
+    { name: 'Tellurium 2.1', en: 2.1 },
+    { name: 'Iodine 2.66', en: 2.66 },
+    { name: 'Xenon 2.6', en: 2.60 },
+    { name: 'Caesium 0.79', en: 0.79 },
+    { name: 'Barium 0.89', en: 0.89 },
+    { name: 'Lanthanum 1.10', en: 1.1 },
+    { name: 'Cerium 1.12', en: 1.12 },
+    { name: 'Praseodymium 1.13', en: 1.13 },
+    { name: 'Neodymium 1.14', en: 1.14 },
+    { name: 'Promethium 1.13', en: 1.13 },
+    { name: 'Samarium 1.17', en: 1.17 },
+    { name: 'Europium 1.2', en: 1.2 },
+    { name: 'Gadolinium 1.2', en: 1.2 },
+    { name: 'Terbium 1.1', en: 1.1 },
+    { name: 'Dysprosium 1.22', en: 1.22 },
+    { name: 'Holmium 1.23', en: 1.23 },
+    { name: 'Erbium 1.24', en: 1.24 },
+    { name: 'Thulium 1.25', en: 1.25 },
+    { name: 'Ytterbium 1.1', en: 1.1 },
+    { name: 'Lutetium 1.27', en: 1.27 },
+    { name: 'Hafnium 1.3', en: 1.3 },
+    { name: 'Tantalum 1.5', en: 1.5 },
+    { name: 'Tungsten 2.36', en: 2.36 },
+    { name: 'Rhenium 1.9', en: 1.9 },
+    { name: 'Osmium 2.2', en: 2.2 },
+    { name: 'Iridium 2.2', en: 2.2 },
+    { name: 'Platinum 2.28', en: 2.28 },
+    { name: 'Gold 2.54', en: 2.54 },
+    { name: 'Mercury 2.00', en: 2.00 },
+    { name: 'Thallium 1.62', en: 1.62 },
+    { name: 'Lead 2.33', en: 2.33 },
+    { name: 'Bismuth 2.02', en: 2.02 },
+    { name: 'Polonium 2.0', en: 2.0 },
+    { name: 'Astatine 2.2', en: 2.2 },
+    { name: 'Radon 2.2', en: 2.2 },
+    { name: 'Francium 0.7', en: 0.7 },
+    { name: 'Radium 0.9', en: 0.9 },
+    { name: 'Actinium 1.1', en: 1.1 },
+    { name: 'Thorium 1.3', en: 1.3 },
+    { name: 'Protactinium 1.5', en: 1.5 },
+    { name: 'Uranium 1.38', en: 1.38 },
+    { name: 'Neptunium 1.36', en: 1.36 },
+    { name: 'Plutonium 1.28', en: 1.28 },
+    { name: 'Americium 1.13', en: 1.13 },
+    { name: 'Curium 1.28', en: 1.28 },
+    { name: 'Berkelium 1.3', en: 1.3 },
+    { name: 'Californium 1.3', en: 1.3 },
+    { name: 'Einsteinium 1.3', en: 1.3 },
+    { name: 'Fermium 1.3', en: 1.3 },
+    { name: 'Mendelevium 1.3', en: 1.3 },
+    { name: 'Nobelium 1.3', en: 1.3 },
+    { name: 'Lawrencium 1.3', en: 1.3 },
+    { name: 'Rutherfordium 0.0', en: 0.0 },
+    { name: 'Dubnium 0.0', en: 0.0},
+    { name: 'Seaborgium 0.0', en: 0.0},
+    { name: 'Bohrium 0.0', en: 0.0},
+    { name: 'Hassium 0.0', en: 0.0},
+    { name: 'Meitnerium 0.0', en: 0.0},
+    { name: 'Darmstadtium 0.0', en: 0.0},
+    { name: 'Roentgenium 0.0', en: 0.0},
+    { name: 'Copernicium 0.0', en: 0.0},
+    { name: 'Nihonium 0.0', en: 0.0},
+    { name: 'Flerovium 0.0', en: 0.0},
+    { name: 'Moscovium 0.0', en: 0.0},
+    { name: 'Livermorium 0.0', en: 0.0},
+    { name: 'Tennessine 0.0', en: 0.0},
+    { name: 'Oganesson 0.0', en: 0.0},
+];
+
+const element1Select = document.getElementById('element1');
+const element2Select = document.getElementById('element2');
+
+elements.forEach(element => {
+    const option1 = document.createElement('option');
+    option1.value = element.en;
+    
+    option1.text = element.name;
+    element1Select.add(option1);
+
+    const option2 = document.createElement('option');
+    option2.value = element.en;
+    option1.style.width='50px';
+    option2.text = element.name;
+    element2Select.add(option2);
+});
+
+function checkBondType() {
+    const en1 = parseFloat(element1Select.value);
+    const en2 = parseFloat(element2Select.value);
+
+    if (isNaN(en1) || isNaN(en2)) {
+        document.getElementById('result').innerText = 'Please select two valid elements.';
+        return;
+    }
+
+    const difference = (en1 - en2);
+    let bondType;
+
+    if (difference > 1.7) {
+        bondType = 'Ionic Bond';
+    } else if (difference >= 0.4) {
+        bondType = 'Polar Covalent Bond';
+    } else {
+        bondType = 'Non-Polar Covalent Bond';
+    }
+
+    document.getElementById('result').innerText = difference + "\n" + `The bond type is: ${bondType}`;
+}
+
+function know(){
+    document.getElementById('bondSection').style.display='block';
+}
+
+function closeButton(){
+    document.getElementById('bondSection').style.display='none';
+}
+</script>
+
+CHECKER CSS
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quantico', sans-serif;
+    background-color: #bebeff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow-x: hidden;
+}
+nav {
+    background-color: #333;
+    padding: 15px;
+    text-align: center;
+
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: auto;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out; 
+}
+nav a:hover {
+    color: #ffcc00;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+h1 {
+    color: #333;
+    transition: .35s ease-in-out;
+}
+.container {
+    width: 50%;
+    margin-top: 50px;
+    margin: 20px auto;
+    max-width: 400px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.text-container {
+    width: 50%;
+    background-color:#CBC3E3;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.text-container h3 {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+select {
+    width: calc(50% - 10px);
+    padding: 10px;
+    margin: 10px 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.dropdown{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 15px;
+    position: relative;
+}
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.5s ease;
+    font-family: 'Quantico', sans-serif;
+}
+button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+p {
+    font-size: 18px;
+    color: #555;
+}
+
+.text-container {
+        margin: 10px;
+}
+
+input[type=submit]{
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.5s ease;
+    font-family: 'Quantico', sans-serif;
+}
+input[type=submit]:hover{
+    background-color: #247d39;
+    color:#28a745;
+    transform: scale(1.05);
+}
+.bond-section{
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #f9f9f9;
+    width: 50%;
+    
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+   }
+  
+   footer p {
+   margin: 5px 0;
+   font-family: 'Quantico', sans-serif;
+   color: white;
+   }
+   .checker{
+    color: #ffcc00;
+   }
+li {
+    text-align: left;
+}
+/* Responsive adjustments for very small screens */
+@media screen and (max-width: 375px) {
+    nav a {
+        font-size: 10px;
+        margin: 0 5px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .container, .text-container, .bond-section {
+        width: 95%;
+        padding: 15px;
+    }
+
+    p, .text-container h3 {
+        font-size: 15px;
+    }
+}
+
+/* Responsive adjustments for tablets and larger phones */
+@media screen and (min-width: 376px) and (max-width: 768px) {
+    nav a {
+        font-size: 10px;
+    }
+
+    .container, .text-container, .bond-section {
+        width: 92%;
+    }
+}
+
+/* Ensure full responsiveness */
+* {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+MOLECULAR GEOMETRY HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Molecular Geometry</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&display=swap">
+    <style>
+        html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quantico', sans-serif;
+    background-color: #bebeff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow-x: hidden;
+}
+nav {
+    background-color: #333;
+    padding: 15px;
+    text-align: center;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: auto;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out; 
+}
+nav a:hover {
+    color: #ffcc00;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+
+   }
+  
+   footer p {
+   margin: 5px 0;
+   font-family: 'Quantico', sans-serif;
+   color: white;
+   }
+   .container {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 1000px;
+            width: 100%;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            min-width: 300px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .geo{
+    color: #ffcc00;
+            
+        }
+        td{
+            font-size:25px;
+        }
+        /* Responsive adjustments for very small screens */
+@media screen and (max-width: 375px) {
+    nav a {
+        font-size: 10px;
+        margin: 0 5px;
+    }
+
+    .container {
+        width: 98%;
+        padding: 10px;
+    }
+
+    th, td {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    td {
+        font-size: 14px;
+    }
+}
+
+/* Responsive adjustments for tablets and larger phones */
+@media screen and (min-width: 376px) and (max-width: 768px) {
+    nav a {
+        font-size: 10px;
+    }
+
+    .container {
+        width: 96%;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}
+
+/* Horizontal scrolling for tables on small screens */
+@media screen and (max-width: 600px) {
+    .container {
+        overflow-x: auto;
+    }
+}
+
+/* Ensure full responsiveness */
+* {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="electronegativity.html">Home</a>
+        <a href="checker.html">Electronegativity Checker</a>
+        <a href="molecular_geometry.html" class="geo">Molecular Geometry</a>
+        
+    </nav>
+    <br><center><div class="container">
+        <h1>Molecular Geometry Table</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Geometry</th>
+                    <th>Electron Groups</th>
+                    <th>Bonded Atoms</th>
+                    <th>Lone Pairs</th>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Linear<br>
+                        <img src="linear.png">
+                    </td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>CO<sup>2</sup></td>
+                </tr>
+                <tr>
+                    <td>Trigonal Planar<br>
+                    <img src="trigonal planar.png">
+                </td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>BF<sup>3</sup></td>
+                </tr>
+                <tr>
+                    <td>Bent<br>
+                    <img src="bent.png">
+                </td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>SO<sup>2</sup></td>
+                </tr>
+                <tr>
+                    <td>Tetrahedral<br>
+                    <img src="tetrahedral.png">
+                </td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>CH<sup>4</sup></td>
+                </tr>
+                <tr>
+                    <td>Trigonal Pyramidal<br>
+                    <img src="pyramidal.png" width="50%">
+                </td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>NH<sup>3</sup></td>
+                </tr>
+                <tr>
+                    <td>Trigonal Bipyramidal<br>
+                    <img src="trigonal bypyramidal.png">
+                </td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>0</td>
+                    <td>PCl<sup>5</sup></td>
+                </tr>
+                <tr>
+                    <td>Seesaw<br>
+                    <img src="sea-saw.png" width="70%">
+                </td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>SF<sup>4</sup></td>
+                </tr>
+                <tr>
+                    <td>T-Shaped<br>
+                    <img src="t-shaped.png" width="60%">
+                </td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>ClF<sup>3</sup></td>
+                </tr>
+                <tr>
+                    <td>Octahedral<br>
+                    <img src="octahedral.png">
+                </td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>0</td>
+                    <td>SF<sup>6</sup></td>
+                </tr>
+                <tr>
+                    <td>Square Pyramidal<br>
+                    <img src="square pyramidal.png">
+                </td>
+                    <td>6</td>
+                    <td>5</td>
+                    <td>1</td>
+                    <td>BrF<sup>5</sup></td>
+                </tr>
+                <tr>
+                    <td>Square Planar<br>
+                    <img src="square planar.png" width="60%"></td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>XeF<sup>4</sup></td>
+                </tr>
+            </tbody>
+        </table>
+    </div></center><br><br>
+</body>
+<footer>
+    <p>Group  5 - Physical Science</p>
+    <p>Lagro High School</p>
+</footer>
+</html>
